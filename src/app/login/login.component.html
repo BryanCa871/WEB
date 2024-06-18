@@ -1,0 +1,21 @@
+<main>
+    <form class="formulario" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h1>Iniciar Sesión</h1>
+      <div class="contenedor">
+  
+        <div class="input-contenedor">
+          <i class="fas fa-envelope icon"></i>
+          <input type="text" formControlName="email" placeholder="Correo Electrónico">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="password" formControlName="password" placeholder="Contraseña">
+        </div>
+  
+        <input type="submit" value="Iniciar Sesión" class="button">
+        <p>¿No tienes una cuenta?<a class="link" href="/registro">Regístrate aquí</a></p>
+      </div>
+    </form>
+  </main>
+  

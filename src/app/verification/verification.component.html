@@ -1,0 +1,16 @@
+<main>
+    <form class="formulario" [formGroup]="verificationForm" (ngSubmit)="onSubmit()">
+      <h1>Verificar Código</h1>
+      <div class="contenedor">
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="verificationCode" placeholder="Código de Verificación" maxlength="6" >
+        </div>
+  
+        <input type="submit" value="Verificar" class="button">
+        <p>Ingresa el código enviado por SMS.</p>
+      </div>
+    </form>
+  </main>
+  

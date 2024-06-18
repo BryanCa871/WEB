@@ -1,0 +1,69 @@
+<main>
+    <form class="formulario" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <h1>Registrate</h1>
+      <div class="contenedor">
+  
+        <div class="input-contenedor">
+          <i class="fas fa-user icon"></i>
+          <input type="text" formControlName="nombre" placeholder="Nombre">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-envelope icon"></i>
+          <input type="text" formControlName="apellido_paterno" placeholder="Apellido Paterno" maxlength="60">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="apellido_materno" placeholder="Apellido Materno" maxlength="60">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="username" placeholder="Nombre de Usuario" maxlength="60">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="telefono" placeholder="Telefono" maxlength="10">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="direccion" placeholder="Dirección" maxlength="100">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="ciudad" placeholder="Ciudad"  maxlength="30">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="codigo_postal" placeholder="Código Postal" maxlength="5">
+        </div>
+  
+       
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="text" formControlName="email" placeholder="Correo Electronico" maxlength="60">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="password" formControlName="password" placeholder="Contraseña" maxlength="20">
+        </div>
+  
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="password" formControlName="confirmPassword" placeholder="Confirmar Contraseña" maxlength="20">
+        </div>
+  
+        <input type="submit" value="Registrate" class="button">
+        <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        <p>¿Ya tienes una cuenta?<a class="link" [routerLink]="['/login']">Iniciar Sesion</a></p>
+      </div>
+    </form>
+  </main>
+  
